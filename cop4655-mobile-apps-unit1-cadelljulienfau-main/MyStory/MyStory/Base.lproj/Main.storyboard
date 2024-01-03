@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BuA-Q7-svU">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MyStory-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="MyStory" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CNy-su-2EY" userLabel="Main View">
+                                <rect key="frame" x="16" y="119" width="361" height="683"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="weI-JC-rJ1">
+                                        <rect key="frame" x="30.666666666666657" y="0.0" width="300" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Untold Story!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvu-SE-PUB">
+                                                <rect key="frame" x="82.6666666666667" y="0.0" width="134.33333333333337" height="160"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cadell" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-VQ-pSz">
+                                                <rect key="frame" x="0.0" y="140" width="300" height="160"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="50t-JV-biu"/>
+                                            <constraint firstAttribute="width" constant="300" id="qxd-FF-KW4"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="A8Y-UB-kaU">
+                                        <rect key="frame" x="106.33333333333333" y="310" width="148.33333333333337" height="373"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0p-7R-a1Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="148.33333333333334" height="66.333333333333329"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="My biography ">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.57254904510000004" green="0.60392159219999997" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="YWH-XM-doI" appends="YES" id="EMr-6t-Zbi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voa-Vy-IYX">
+                                                <rect key="frame" x="0.0" y="111.33333333333337" width="148.33333333333334" height="66.333333333333314"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Favorite Sport">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.57254904510000004" green="0.60392159219999997" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="zsp-Mm-bRM" appends="YES" id="SWD-c0-y6D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hii-he-f2n">
+                                                <rect key="frame" x="0.0" y="222.66666666666663" width="148.33333333333334" height="150.33333333333337"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="My Social Media">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.57254904510000004" green="0.60392159219999997" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Fth-oE-WRV" appends="YES" id="1no-7s-OQn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.57254904510000004" green="0.60392159219999997" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CNy-su-2EY" secondAttribute="bottom" constant="16" id="CUH-wA-hdS"/>
+                            <constraint firstItem="CNy-su-2EY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HrN-Hd-2rT"/>
+                            <constraint firstItem="CNy-su-2EY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="afO-nb-Cvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CNy-su-2EY" secondAttribute="trailing" constant="16" id="wl6-9h-544"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cadell Julien" id="mh0-2h-Olh" userLabel="Cadell Julien"/>
+                    <connections>
+                        <segue destination="xjQ-av-2th" kind="show" identifier="detailSegue" id="r7a-rN-cQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YWH-XM-doI" userLabel="Tap Bio">
+                    <connections>
+                        <action selector="didTapScreen:" destination="BYZ-38-t0r" id="vIR-q1-KhI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="zsp-Mm-bRM" userLabel="Tap Sport">
+                    <connections>
+                        <action selector="didTapScreen:" destination="BYZ-38-t0r" id="Z5j-ud-X5f"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Fth-oE-WRV" userLabel="Tap SM">
+                    <connections>
+                        <action selector="didTapScreen:" destination="BYZ-38-t0r" id="EZ2-db-2Xa"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="I4q-sk-DyQ">
+            <objects>
+                <viewController id="xjQ-av-2th" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JK9-p3-kU5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fXn-vs-UbC">
+                                <rect key="frame" x="16" y="119" width="361" height="683"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rg3-Fn-m0o">
+                                        <rect key="frame" x="140.66666666666666" y="0.0" width="80" height="221"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="old-8D-Set">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="221"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="STO-Tf-b9c">
+                                        <rect key="frame" x="0.0" y="231" width="361" height="221"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nsh-17-X55">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="221"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw6-WZ-KTO">
+                                        <rect key="frame" x="160" y="462" width="41.333333333333343" height="221"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DgU-xC-qot"/>
+                        <color key="backgroundColor" red="0.57254904510000004" green="0.60392159219999997" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fXn-vs-UbC" firstAttribute="leading" secondItem="DgU-xC-qot" secondAttribute="leading" constant="16" id="0qe-uF-Wzq"/>
+                            <constraint firstItem="DgU-xC-qot" firstAttribute="bottom" secondItem="fXn-vs-UbC" secondAttribute="bottom" constant="16" id="XYF-Hf-R6U"/>
+                            <constraint firstItem="DgU-xC-qot" firstAttribute="trailing" secondItem="fXn-vs-UbC" secondAttribute="trailing" constant="16" id="nDB-7n-fUj"/>
+                            <constraint firstItem="fXn-vs-UbC" firstAttribute="top" secondItem="DgU-xC-qot" secondAttribute="top" constant="16" id="pg5-fI-e8Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vyr-Km-gWv"/>
+                    <connections>
+                        <outlet property="infoDescription" destination="zw6-WZ-KTO" id="XuK-YH-7Ij"/>
+                        <outlet property="infoImage" destination="nsh-17-X55" id="GHz-dd-08k"/>
+                        <outlet property="infotitle" destination="old-8D-Set" id="Osx-T5-Zoe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ZN-gz-fCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5267175572519" y="7.746478873239437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZbL-UV-dZO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BuA-Q7-svU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yP1-jI-el9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jyP-oU-3a5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7R-jA-TF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cadell" width="886" height="886"/>
+    </resources>
+</document>
